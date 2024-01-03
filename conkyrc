@@ -7,6 +7,7 @@ conky.config = {
     net_avg_samples = 2,
 
     override_utf8_locale = true,
+    times_in_seconds = true,
 
     double_buffer = true,
     no_buffers = true,
@@ -68,7 +69,7 @@ ${voffset 15}${font Ubuntu:Bold:size=9}${goto 15}Name ${goto 120}PID${goto 165}C
 ${voffset 7}${goto 15}${top name 1} ${goto 120}${top pid 1}${goto 165}${top cpu 1}${goto 220}${top mem 1}${goto 300}${voffset -7}${font Conky Icons by Carelli:size=9}Ǒ${font}${goto 320}Root:${goto 360}${fs_bar 7,80 /}${goto 450}${fs_free /} / ${fs_size /}
 ${voffset 5}${goto 15}${top name 2} ${goto 120}${top pid 2}${goto 165}${top cpu 2}${goto 220}${top mem 2}${voffset -7}${goto 300}${font Conky Icons by Carelli:size=9}M${font}${goto 320}Home:${goto 360}${fs_bar 7,80 /home}${goto 450}${fs_free /home} / ${fs_size /home}
 ${voffset 5}${goto 15}${top name 3} ${goto 120}${top pid 3}${goto 165}${top cpu 3}${goto 220}${top mem 3}
-${voffset 2}${goto 300}${color #F8DF58}${font Conky Icons by Carelli:size=9}Œ${font Radio Space:size=9}${goto 320}BATTERY:$alignr${font}${color #FFFFFF}${battery BAT0}
+${voffset 2}${goto 300}${color #F8DF58}${font Conky Icons by Carelli:size=9}Œ${font Radio Space:size=9}${goto 320}BATTERY:$alignr${font}${color #FFFFFF}${battery BAT0} ${format_time $battery_time "\hh\mm"}
 ${voffset -15}${goto 15}${top name 4} ${goto 120}${top pid 4}${goto 165}${top cpu 4}${goto 220}${top mem 4}
 ${voffset 2}${goto 15}${top name 5} ${goto 120}${top pid 5}${goto 165}${top cpu 5}${goto 220}${top mem 5}
 ${voffset 2}${goto 15}${top name 6} ${goto 120}${top pid 6}${goto 165}${top cpu 6}${goto 220}${top mem 6}${voffset -4}${goto 300}${color #F8DF58}${font Conky Icons by Carelli:size=9}Ŵ${goto 320}${font Radio Space:size=9}CPU${color}${font}
