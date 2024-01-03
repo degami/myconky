@@ -29,7 +29,7 @@ conky.config = {
 
 
 --minimum_size 1100 500
-    maximum_width = 600,
+    maximum_width = 1200,
 
     alignment = 'top_right',
     gap_x = 30,
@@ -50,19 +50,19 @@ conky.config = {
     default_color = '#FFFFFF',
 --own_window_transparent yes
     own_window_colour = '#000000',
-    minimum_width = 0, minimum_height = 400,
+    minimum_width = 600, minimum_height = 430,
 };
 
 conky.text = [[
-${goto 210}${color #F8DF58}${font Conky Icons by Carelli:size=25}A${color #FFFFFF}${goto 290}${font Conky Icons by Carelli:size=15}ǒ${font Radio Space:size=15}${uptime_short}${alignr}${font Conky Icons by Carelli:size=15}Ƌ${font Radio Space:size=15}${time %H.%M}${font}
+${goto 210}${color #F8DF58}${font Conky Icons by Carelli:size=25}A${color #FFFFFF}${goto 300}${font Conky Icons by Carelli:size=15}ǒ${font Radio Space:size=15}${uptime_short}${alignr}${font Conky Icons by Carelli:size=15}Ƌ${font Radio Space:size=15}${time %H.%M}${font}
 ${goto 210}${hr 1}
-${voffset 12}${goto 15}${color #f8df58}${font Conky Icons by Carelli:size=9}E${goto 30}${font Radio Space:size=9}WLAN0${goto 150}${font Conky Icons by Carelli:size=9}E${font Radio Space:size=9} WLAN1${goto 290}${font Conky Icons by Carelli:size=9}E${font Radio Space:size=9} ETH${color}${font size=9}${alignr}${distribution} ${kernel}
+${voffset 12}${goto 15}${color #f8df58}${font Conky Icons by Carelli:size=9}E${goto 30}${font Radio Space:size=9}WLP2S0${goto 150}${font Conky Icons by Carelli:size=9}E${font Radio Space:size=9} WLAN1${goto 300}${font Conky Icons by Carelli:size=9}E${font Radio Space:size=9} ETH${color}${font size=9}${alignr}${distribution} ${kernel}
 ${voffset -4}${alignr}${font}${nodename}
-${voffset -8}${goto 15}${font Conky Icons by Carelli:size=9}Ƃ${goto 30}${font}Up Speed: ${upspeed wlan0}${goto 150}${font Conky Icons by Carelli:size=9}Ƃ${font}${goto 165}Up Speed: ${upspeed wlan1}${goto 290}${font Conky Icons by Carelli:size=9}Ƃ${font}${goto 305}Up Speed: ${upspeed eth0}
-${voffset 2}${goto 15}${font Conky Icons by Carelli:size=9}Ɓ${font}${goto 30}Down Speed: ${downspeed wlan0}${goto 150}${font Conky Icons by Carelli:size=9}Ɓ${font}${goto 165}Down Speed: ${downspeed wlan1}${goto 290}${font Conky Icons by Carelli:size=9}Ɓ${font}${goto 305}Down Speed: ${downspeed eth0}
-${voffset 2}${goto 15}${font Conky Icons by Carelli:size=9}h${font}${goto 30}IP: ${addrs wlan0}${goto 150}${font Conky Icons by Carelli:size=9}h${goto 165}${font}IP: ${addrs wlan1}${goto 290}${font Conky Icons by Carelli:size=9}h${goto 305}${font}IP: ${addrs eth0}
-${voffset 2}${goto 15}${font Conky Icons by Carelli:size=9}Ǘ${font}${goto 30}SSID (wlan0): ${wireless_essid wlan0}${goto 290}${wireless_link_qual wlan0}%
-${voffset 4}${goto 15}${font Conky Icons by Carelli:size=9}Ǘ${font}${goto 30}SSID (wlan1): ${wireless_essid wlan1}${goto 290}${wireless_link_qual wlan1}%
+${voffset -8}${goto 15}${font Conky Icons by Carelli:size=9}Ƃ${goto 30}${font}Up Speed: ${upspeed wlp2s0}${goto 150}${font Conky Icons by Carelli:size=9}Ƃ${font}${goto 165}Up Speed: ${upspeed wlan1}${goto 300}${font Conky Icons by Carelli:size=9}Ƃ${font}${goto 315}Up Speed: ${upspeed eth0}
+${voffset 2}${goto 15}${font Conky Icons by Carelli:size=9}Ɓ${font}${goto 30}Down Speed: ${downspeed wlp2s0}${goto 150}${font Conky Icons by Carelli:size=9}Ɓ${font}${goto 165}Down Speed: ${downspeed wlan1}${goto 300}${font Conky Icons by Carelli:size=9}Ɓ${font}${goto 315}Down Speed: ${downspeed eth0}
+${voffset 2}${goto 15}${font Conky Icons by Carelli:size=9}h${font}${goto 30}IP: ${addrs wlp2s0}${goto 150}${font Conky Icons by Carelli:size=9}h${goto 165}${font}IP: ${addrs wlan1}${goto 300}${font Conky Icons by Carelli:size=9}h${goto 315}${font}IP: ${addrs eth0}
+${voffset 2}${goto 15}${font Conky Icons by Carelli:size=9}Ǘ${font}${goto 30}SSID (wlp2s0): ${wireless_essid wlp2s0}${goto 300}${wireless_link_qual wlp2s0}%
+${voffset 4}${goto 15}${font Conky Icons by Carelli:size=9}Ǘ${font}${goto 30}SSID (wlan1): ${wireless_essid wlan1}${goto 300}${wireless_link_qual wlan1}%
 ${voffset 10}${goto 15}${color #F8DF58}${font Conky Icons by Carelli:size=9}Ŷ${goto 40}${font Radio Space:size=9}PROCESSES${voffset -7}${goto 300}${voffset 7}${font Conky Icons by Carelli:size=9}ň${goto 320}${font Radio Space:size=9}DISK${color}${font}
 ${voffset 15}${font Ubuntu:Bold:size=9}${goto 15}Name ${goto 120}PID${goto 165}CPU%${goto 220}MEM%${voffset -7}${goto 300}${font Conky Icons by Carelli:size=9}ǘ${font}${goto 320}${acpitemp} ºC
 ${voffset 7}${goto 15}${top name 1} ${goto 120}${top pid 1}${goto 165}${top cpu 1}${goto 220}${top mem 1}${goto 300}${voffset -7}${font Conky Icons by Carelli:size=9}Ǒ${font}${goto 320}Root:${goto 360}${fs_bar 7,80 /}${goto 450}${fs_free /} / ${fs_size /}
@@ -71,9 +71,11 @@ ${voffset 5}${goto 15}${top name 3} ${goto 120}${top pid 3}${goto 165}${top cpu 
 ${voffset 2}${goto 300}${color #F8DF58}${font Conky Icons by Carelli:size=9}Œ${font Radio Space:size=9}${goto 320}BATTERY:$alignr${font}${color #FFFFFF}${battery BAT0}
 ${voffset -15}${goto 15}${top name 4} ${goto 120}${top pid 4}${goto 165}${top cpu 4}${goto 220}${top mem 4}
 ${voffset 2}${goto 15}${top name 5} ${goto 120}${top pid 5}${goto 165}${top cpu 5}${goto 220}${top mem 5}
-${voffset 2}${goto 15}${top name 6} ${goto 120}${top pid 6}${goto 165}${top cpu 6}${goto 220}${top mem 6}${voffset -4}${goto 300}${color #F8DF58}${font Conky Icons by Carelli:size=9}Ŵ${goto 320}${font Radio Space:size=9}CPU${goto 455}${font Conky Icons by Carelli:size=9}B${font Radio Space:size=9}${goto 470}MEM${color}${font}
-${voffset 2}${goto 15}${top name 7} ${goto 120}${top pid 7}${goto 165}${top cpu 7}${goto 220}${top mem 7}${goto 300}CPU0: ${cpu cpu1}%${goto 370}${cpubar cpu1 7,80}${goto 460}RAM:${goto 499}$memperc%${goto 534}${membar 7,80}
-${voffset 2}${goto 15}${top name 8} ${goto 120}${top pid 8}${goto 165}${top cpu 8}${goto 220}${top mem 8}${goto 300}CPU1: ${cpu cpu2}%${goto 370}${cpubar cpu2 7,80}${goto 460}SWAP:${goto 499}$swapperc%${goto 534}${swapbar 7,80}
-${voffset 2}${goto 15}${top name 9} ${goto 120}${top pid 9}${goto 165}${top cpu 9}${goto 220}${top mem 9}${goto 300}CPU2: ${cpu cpu3}%${goto 370}${cpubar cpu3 7,80}
-${voffset 2}${goto 15}${top name 10} ${goto 120}${top pid 10}${goto 165}${top cpu 10}${goto 220}${top mem 10}${goto 300}CPU3: ${cpu cpu4}%${goto 370}${cpubar cpu4 7,80}
+${voffset 2}${goto 15}${top name 6} ${goto 120}${top pid 6}${goto 165}${top cpu 6}${goto 220}${top mem 6}${voffset -4}${goto 300}${color #F8DF58}${font Conky Icons by Carelli:size=9}Ŵ${goto 320}${font Radio Space:size=9}CPU${color}${font}
+${voffset 2}${goto 15}${top name 7} ${goto 120}${top pid 7}${goto 165}${top cpu 7}${goto 220}${top mem 7}${goto 300}CPU0: ${cpu cpu1}%${goto 370}${cpubar cpu1 7,80}${goto 470}CPU4: ${cpu cpu5}%${goto 534}${cpubar cpu5 7,80}
+${voffset 2}${goto 15}${top name 8} ${goto 120}${top pid 8}${goto 165}${top cpu 8}${goto 220}${top mem 8}${goto 300}CPU1: ${cpu cpu2}%${goto 370}${cpubar cpu2 7,80}${goto 470}CPU5: ${cpu cpu6}%${goto 534}${cpubar cpu6 7,80}
+${voffset 2}${goto 15}${top name 9} ${goto 120}${top pid 9}${goto 165}${top cpu 9}${goto 220}${top mem 9}${goto 300}CPU2: ${cpu cpu3}%${goto 370}${cpubar cpu3 7,80}${goto 470}CPU6: ${cpu cpu7}%${goto 534}${cpubar cpu7 7,80}
+${voffset 2}${goto 15}${top name 10} ${goto 120}${top pid 10}${goto 165}${top cpu 10}${goto 220}${top mem 10}${goto 300}CPU3: ${cpu cpu4}%${goto 370}${cpubar cpu4 7,80}${goto 470}CPU7: ${cpu cpu8}%${goto 534}${cpubar cpu8 7,80}
+${voffset 8}${goto 300}${color #F8DF58}${font Conky Icons by Carelli:size=9}B${font Radio Space:size=9}${goto 320}MEM${color}${font}
+${voffset 2}${goto 300}RAM:${goto 330}$memperc%${goto 370}${membar 7,80}${goto 470}SWAP:${goto 499}$swapperc%${goto 534}${swapbar 7,80}
 ]];
