@@ -55,7 +55,7 @@ conky.config = {
 };
 
 conky.text = [[
-${goto 210}${color #F8DF58}${font Conky Icons by Carelli:size=25}A${color #FFFFFF}${goto 300}${font Conky Icons by Carelli:size=15}ǒ${font Radio Space:size=15}${uptime_short}${alignr}${font Conky Icons by Carelli:size=15}Ƌ${font Radio Space:size=15}${time %H.%M}${font}
+${goto 210}${color #F8DF58}${font Conky Icons by Carelli:size=25}A${color #FFFFFF}${goto 300}${font Conky Icons by Carelli:size=15}ǒ${font Radio Space:size=15}${format_time $uptime_short "\hh \mm \ss"}${alignr}${font Conky Icons by Carelli:size=15}Ƌ${font Radio Space:size=15}${time %H.%M}${font}
 ${goto 210}${hr 1}
 ${voffset 12}${goto 15}${color #f8df58}${font Conky Icons by Carelli:size=9}E${goto 30}${font Radio Space:size=9}WLP2S0${goto 150}${font Conky Icons by Carelli:size=9}E${font Radio Space:size=9} WLAN1${goto 300}${font Conky Icons by Carelli:size=9}E${font Radio Space:size=9} ETH${color}${font size=9}${alignr}${distribution} ${kernel}
 ${voffset -4}${alignr}${font}${nodename}
